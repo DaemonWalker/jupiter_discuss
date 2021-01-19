@@ -1,0 +1,1 @@
+export const isLoading = (any: any): boolean => any ? false : true;
