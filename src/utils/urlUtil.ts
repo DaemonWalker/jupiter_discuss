@@ -1,6 +1,6 @@
 export class UrlUtil {
     public static getIssuePage(id: number): string {
-        return `/issues/${id}`;
+        return `/issue/${id}`;
     }
     public static getUserPage(id: number): string {
         return `/user/${id}`;

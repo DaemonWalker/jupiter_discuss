@@ -6,6 +6,8 @@ import { BrowserRouter, Link, Route } from 'react-router-dom';
 import { Login } from './pages/login';
 import { Home } from './pages/home';
 import { Block } from './pages/block';
+import { Issue } from './pages/issue';
+import { Page404 } from './pages/page404';
 const { Header, Content, Footer } = Layout;
 
 function App() {
@@ -21,9 +23,11 @@ function App() {
                 </Header>
                 <Content style={{ padding: '0 50px', display: 'flex', flexDirection: 'column' }}>
                     <div className="site-layout-content">
-                        <Route path="/login" exact component={Login}></Route>
                         <Route path="/" exact component={Home}></Route>
+                        <Route path="/login" exact component={Login}></Route>
                         <Route path="/block/:id" exact component={Block}></Route>
+                        <Route path="/issue/:id" exact component={Issue}></Route>
+                        {/* <Route path="/" component={Page404}></Route> */}
                     </div>
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>DBD2 Discuss ©2021 Created by TechClub</Footer>
