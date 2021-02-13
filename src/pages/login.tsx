@@ -1,5 +1,6 @@
 import React from 'react';
-import { Row, Col, Divider, Card, Form, Input, Button, Checkbox } from 'antd'
+import { Form } from 'antd';
+import { Row, Col, Divider, Card, Input, Button, Checkbox } from 'antd';
 
 export class Login extends React.Component<IProps, IState> {
     layout = {

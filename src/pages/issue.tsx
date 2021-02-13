@@ -4,7 +4,7 @@ import { RouteComponentProps } from "react-router-dom";
 import { Floor } from "../components/issues/floor";
 import { UserModel } from "../models/userModel";
 
-const { Paragraph, Title } = Typography;
+const { Paragraph, Text } = Typography;
 
 export const Issue: FunctionComponent<IProps> = ({ match }) => {
 
@@ -28,7 +28,7 @@ export const Issue: FunctionComponent<IProps> = ({ match }) => {
                     {/* <Paragraph>查看:200 回帖:50</Paragraph> */}
                 </Col>
                 <Col flex="auto">
-                    <Title level={4}>这是用于测试的标题</Title>
+                    <Text strong>这是用于测试的标题</Text>
                 </Col>
             </Row>
             <Row>
